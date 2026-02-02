@@ -1,6 +1,10 @@
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 import type { StorybookConfig } from "@storybook/react-vite";
-import path from "path";
-import tsconfigPaths from "vite-tsconfig-paths";
+
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -14,16 +18,14 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
-  },
+  docs: ({ autodocs: "tag" } as any),
   viteFinal: async (config) => {
-    config.plugins?.push(
-      /** @see https://github.com/aleclarson/vite-tsconfig-paths */
-      tsconfigPaths({
-        projects: [path.resolve(path.dirname(__dirname), "tsconfig.json")],
-      })
-    );
+    // config.plugins?.push(
+    //   /** @see https://github.com/aleclarson/vite-tsconfig-paths */
+    //   tsconfigPaths({
+    //     projects: [path.resolve(path.dirname(__dirname), "tsconfig.json")],
+    //   })
+    // );
 
     return config;
   },
