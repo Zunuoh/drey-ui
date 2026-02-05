@@ -1,20 +1,19 @@
-import { cn } from "../../utils/";
+import { cn } from "../../utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import { forwardRef, type ComponentProps } from "react";
+import { type ComponentProps, forwardRef } from "react";
 
 const inputStyles = cva([
-  "w-full",
-  "border",
-  "border-gray-200",
-  "p-2",
-  "rounded-lg",
-  "transition-all",
-  "duration-100",
-  "outline-none",
-  "focus:outline-primary-500 ",
-  "focus:border-transparent",
-  "placeholder:text-gray-400",
-  "placeholder:text-sm",
+    "w-full",
+    "border",
+    "border-gray-200",
+    "p-2",
+    "rounded-lg",
+    "transition-all",
+    "duration-100",
+    "outline-none",
+    "focus:outline-primary-500",
+    "placeholder:text-gray-400",
+    "placeholder:text-sm",
 ]);
 
 type InputProps = ComponentProps<"input"> & VariantProps<typeof inputStyles>;
