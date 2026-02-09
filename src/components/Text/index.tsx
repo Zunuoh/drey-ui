@@ -74,4 +74,4 @@ const TextInner = <C extends React.ElementType = "span">(
   );
 };
 
-export const Text = forwardRef(TextInner) as TextComponent;
+export const Text = forwardRef(TextInner as any) as unknown as TextComponent;
