@@ -8,11 +8,34 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 import { playwright } from '@vitest/browser-playwright';
+import dts from 'vite-plugin-dts';
 const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), dts({ rollupTypes: true })],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    }
+  },
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, './src/components/index.tsx'),
+      name: 'drey-ui',
+      fileName: "drey-ui",
+    },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+      output: {
+        globals:{
+          react: "React",
+          "react-dom": "ReactDOM"
+        }
+      }
+    }
+
+  },
   test: {
     projects: [{
       extends: true,

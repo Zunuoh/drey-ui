@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/drey-ui-umd.cjs",
+  "module": "dist/drey-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/drey-ui.js",
+      "require": "./dist/drey-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -45,6 +56,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4",
+    "vite-plugin-dts": "^3.9.1",
     "vitest": "^4.0.18"
   }
 }
