@@ -41,3 +41,14 @@ export const Date: Story = {
   },
 };
 
+export const Select: Story = {
+  args: {
+    type:"select",
+    placeholder:"select"
+  }
+}
+
+
+
+
+
