@@ -19,6 +19,21 @@ const config: StorybookConfig = {
     options: {},
   },
   docs: ({ autodocs: "tag" } as any),
+  typescript: {
+    // Enable docgen for TypeScript files
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldRemoveUndefinedFromOptional: true,
+      propFilter: (prop) => {
+        // Filter out props from node_modules
+        if (prop.parent) {
+          return !prop.parent.fileName.includes('node_modules');
+        }
+        return true;
+      },
+    },
+  },
   viteFinal: async (config) => {
     // config.plugins?.push(
     //   /** @see https://github.com/aleclarson/vite-tsconfig-paths */
