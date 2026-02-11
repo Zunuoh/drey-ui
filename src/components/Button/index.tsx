@@ -36,12 +36,12 @@ const buttonStyles = cva(
         variant: "outline",
         colorscheme: "primary",
         className:
-          "text-primary-600 border-primary bg-transparent hover:bg-primary-100",
+          "text-primary border-primary bg-transparent hover:bg-primary hover:text-white",
       },
       {
         variant: "ghost",
         colorscheme: "primary",
-        className: "text-primary bg-transparent hover:bg-primary-100",
+        className: "text-primary bg-transparent hover:bg-primary hover:text-white",
       },
     ],
     defaultVariants: {

@@ -15,11 +15,38 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Success: Story = {
     args: {
-        children: "Processing...",
+        children: "Paid",
         variant: "solid",
         size: "md",
-        colorscheme: "primary"
+        colorscheme: "success"
+    }
+}
+
+export const Error: Story = {
+    args: {
+        children: "Error",
+        variant: "solid",
+        size: "md",
+        colorscheme: "error"
+    }
+}
+
+export const Pending: Story = {
+    args: {
+        children: "Pending",
+        variant: "solid",
+        size: "md",
+        colorscheme: "pending"
+    }
+}
+
+export const Refund: Story = {
+    args: {
+        children: "Refunded",
+        variant: "solid",
+        size: "md",
+        colorscheme: "refund"
     }
 }
