@@ -4,18 +4,44 @@ A reusable and scalable React UI component library built with modern best practi
 
 This library provides consistent, accessible, and customizable UI components to accelerate frontend development.
 
-**✨ Features**
+***✨ Features***
 
-Reusable, composable components
+- Reusable, composable components
+- Built with modern React (Functional Components + Hooks)
+- Fully documented with Storybook
+- Interactive component playground
+- Clean and minimal design
+- Easy to extend and customize
+- Designed for scalability
 
-Built with modern React (Functional Components + Hooks)
+📚 Components
 
-Fully documented with Storybook
+✅ Button
+✅ Card
+✅ Text
+✅ Mini Card
+✅ Badge
+✅ Input Field
 
-Interactive component playground
+***📖 Storybook Documentation***
 
-Clean and minimal design
+All components are documented and can be previewed interactively using Storybook.
 
-Easy to extend and customize
+Run Storybook locally:
+npm run storybook
 
-Designed for scalability
+Storybook will start on:
+
+http://localhost:6006
+
+In Storybook, you can:
+
+View component states
+
+Test different props
+
+Explore variants and sizes
+
+Validate accessibility
+
+Use controls to dynamically modify props
