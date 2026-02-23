@@ -1,10 +1,10 @@
-**📦 React UI Library**
+# **📦 React UI Library**
 
 A reusable and scalable React UI component library built with modern best practices and documented using Storybook.
 
 This library provides consistent, accessible, and customizable UI components to accelerate frontend development.
 
-***✨ Features***
+# ***✨ Features***
 
 - Reusable, composable components
 - Built with modern React (Functional Components + Hooks)
@@ -14,7 +14,7 @@ This library provides consistent, accessible, and customizable UI components to 
 - Easy to extend and customize
 - Designed for scalability
 
-📚 Components
+# **📚 Components**
 
 - ✅ Button
 - ✅ Card
@@ -23,7 +23,7 @@ This library provides consistent, accessible, and customizable UI components to 
 - ✅ Badge
 - ✅ Input Field
 
-***📖 Storybook Documentation***
+# ***📖 Storybook Documentation***
 
 All components are documented and can be previewed interactively using Storybook.
 
@@ -42,7 +42,7 @@ In Storybook, you can:
 - Validate accessibility
 - Use controls to dynamically modify props
 
-🎨 Customization
+# ***🎨 Customization***
 
 Components are customizable through:
 - Props
@@ -50,7 +50,7 @@ Components are customizable through:
 - Theme extension (if applicable)
 - Variant-based styling
 
-📈 Why Storybook?
+# ***📈 Why Storybook?***
 
 Using Storybook allows:
 - Isolated component development
