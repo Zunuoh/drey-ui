@@ -16,12 +16,12 @@ This library provides consistent, accessible, and customizable UI components to 
 
 📚 Components
 
-✅ Button
-✅ Card
-✅ Text
-✅ Mini Card
-✅ Badge
-✅ Input Field
+- ✅ Button
+- ✅ Card
+- ✅ Text
+- ✅ Mini Card
+- ✅ Badge
+- ✅ Input Field
 
 ***📖 Storybook Documentation***
 
@@ -36,12 +36,25 @@ http://localhost:6006
 
 In Storybook, you can:
 
-View component states
+- View component states
+- Test different props
+- Explore variants and sizes
+- Validate accessibility
+- Use controls to dynamically modify props
 
-Test different props
+🎨 Customization
 
-Explore variants and sizes
+Components are customizable through:
+- Props
+- CSS overrides
+- Theme extension (if applicable)
+- Variant-based styling
 
-Validate accessibility
+📈 Why Storybook?
 
-Use controls to dynamically modify props
+Using Storybook allows:
+- Isolated component development
+- Better UI consistency
+- Faster design-to-development workflow
+- Easier collaboration with designers
+- Visual regression readiness
