@@ -1,10 +1,10 @@
-📦 React UI Library
+**📦 React UI Library**
 
 A reusable and scalable React UI component library built with modern best practices and documented using Storybook.
 
 This library provides consistent, accessible, and customizable UI components to accelerate frontend development.
 
-✨ Features
+**✨ Features**
 
 Reusable, composable components
 
