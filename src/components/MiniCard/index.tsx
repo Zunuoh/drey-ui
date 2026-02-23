@@ -1,5 +1,6 @@
 import { cn } from "../../utils"
 import { cva, type VariantProps } from "class-variance-authority"
+import { User } from "lucide-react"
 import { forwardRef, type ComponentProps } from "react"
 
 const miniCardStyles = cva(["w-full", "rounded-md"], {
@@ -8,7 +9,7 @@ const miniCardStyles = cva(["w-full", "rounded-md"], {
             solid: "",
         },
         size: {
-            sm: "h-auto w-40 px-2 py-2 flex items-center justify-center flex-col",
+            sm: "h-auto w-35 px-2 py-2 flex items-center justify-center flex-col border border-gray-100",
         },
         colorscheme: {
             primary: "text-black"
@@ -37,9 +38,11 @@ export const MiniCard = forwardRef<HTMLDivElement, MiniCardProps>(
     ({variant, size, colorscheme, ...props}, ref) => {
         return (
             <div ref={ref} className={cn(miniCardStyles({variant, size, colorscheme}))}{...props}>
-                <div className="w-10 h-10 rounded-full bg-amber-700 flex justify-center items-center">dd</div>
-                <div>{props.name}</div>
-                <div>{props.id}</div>
+                <div className="w-10 h-10 rounded-full shadow-xl flex justify-center items-center bg-amber-100">
+                    <User/>
+                </div>
+                <div className="mt-3 font-medium">{props.name}</div>
+                <div className="text-xs">{props.id}</div>
             </div>
         )
     }
