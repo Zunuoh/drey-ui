@@ -28,7 +28,7 @@ This library provides consistent, accessible, and customizable UI components to 
 All components are documented and can be previewed interactively using Storybook.
 
 Run Storybook locally:
-npm run storybook
+```npm run storybook```
 
 Storybook will start on:
 
